@@ -1,0 +1,102 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profission %>
+    <%= form.text_field :profission %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_nasc %>
+    <%= form.text_field :date_nasc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_user %>
+    <%= form.number_field :type_user %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cpf %>
+    <%= form.text_field :cpf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :addr_state %>
+    <%= form.text_field :addr_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :addr_country %>
+    <%= form.text_field :addr_country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :addr_city %>
+    <%= form.text_field :addr_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :addr_street %>
+    <%= form.text_field :addr_street %>
+  </div>
+
+  <div class="field">
+    <%= form.label :addr_zipcode %>
+    <%= form.text_field :addr_zipcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.text_field :password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.text_field :data %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_url %>
+    <%= form.text_field :image_url %>
+  </div>
+
+  <div class="field">
+    <%= form.label :movie_url %>
+    <%= form.text_field :movie_url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

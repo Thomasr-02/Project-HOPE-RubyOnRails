@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <strong>Profission:</strong>
+  <%= @user.profission %>
+</p>
+
+<p>
+  <strong>Date nasc:</strong>
+  <%= @user.date_nasc %>
+</p>
+
+<p>
+  <strong>Type user:</strong>
+  <%= @user.type_user %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @user.phone %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @user.cpf %>
+</p>
+
+<p>
+  <strong>Addr state:</strong>
+  <%= @user.addr_state %>
+</p>
+
+<p>
+  <strong>Addr country:</strong>
+  <%= @user.addr_country %>
+</p>
+
+<p>
+  <strong>Addr city:</strong>
+  <%= @user.addr_city %>
+</p>
+
+<p>
+  <strong>Addr street:</strong>
+  <%= @user.addr_street %>
+</p>
+
+<p>
+  <strong>Addr zipcode:</strong>
+  <%= @user.addr_zipcode %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user.password %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @user.data %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @user.image_url %>
+</p>
+
+<p>
+  <strong>Movie url:</strong>
+  <%= @user.movie_url %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
