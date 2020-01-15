@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @response.description %>
+</p>
+
+<p>
+  <strong>Card:</strong>
+  <%= @response.card_id %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @response.order %>
+</p>
+
+<%= link_to 'Edit', edit_response_path(@response) %> |
+<%= link_to 'Back', responses_path %>

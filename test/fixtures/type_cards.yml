@@ -1,9 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  type_usr: 1
-  data: MyString
+  name: MyString
 
 two:
-  type_usr: 1
-  data: MyString
+  name: MyString

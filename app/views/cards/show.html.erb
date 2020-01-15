@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @card.title %>
+</p>
+
+<p>
+  <strong>Type usr:</strong>
+  <%= @card.type_usr_id %>
+</p>
+
+<p>
+  <strong>Type card:</strong>
+  <%= @card.type_card_id %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @card.description %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @card.image_url %>
+</p>
+
+<p>
+  <strong>Movie url:</strong>
+  <%= @card.movie_url %>
+</p>
+
+<p>
+  <strong>Link url:</strong>
+  <%= @card.link_url %>
+</p>
+
+<p>
+  <strong>Headline:</strong>
+  <%= @card.headline %>
+</p>
+
+<p>
+  <strong>Context:</strong>
+  <%= @card.context %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>

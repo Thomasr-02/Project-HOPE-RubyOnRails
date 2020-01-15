@@ -10,10 +10,55 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_15_034020) do
+ActiveRecord::Schema.define(version: 2020_01_15_052125) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cards", force: :cascade do |t|
+    t.string "title"
+    t.integer "type_usr_id"
+    t.string "type_card_id"
+    t.string "description"
+    t.string "image_url"
+    t.string "movie_url"
+    t.string "link_url"
+    t.string "headline"
+    t.json "context"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.string "text"
+    t.integer "visualized"
+    t.integer "send_user_id"
+    t.integer "recive_user_id"
+    t.date "createAt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "responses", force: :cascade do |t|
+    t.string "description"
+    t.integer "card_id"
+    t.integer "order"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "type_cards", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "type_users", force: :cascade do |t|
+    t.integer "type_usr"
+    t.string "data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "first_name"

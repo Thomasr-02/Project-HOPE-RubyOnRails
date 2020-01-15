@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  type_usr: 1
-  data: MyString
+  description: MyString
+  card_id: 1
+  order: 1
 
 two:
-  type_usr: 1
-  data: MyString
+  description: MyString
+  card_id: 1
+  order: 1

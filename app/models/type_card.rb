@@ -1,0 +1,2 @@
+class TypeCard < ApplicationRecord
+end

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @message.text %>
+</p>
+
+<p>
+  <strong>Visualized:</strong>
+  <%= @message.visualized %>
+</p>
+
+<p>
+  <strong>Send user:</strong>
+  <%= @message.send_user_id %>
+</p>
+
+<p>
+  <strong>Recive user:</strong>
+  <%= @message.recive_user_id %>
+</p>
+
+<p>
+  <strong>Createat:</strong>
+  <%= @message.createAt %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>

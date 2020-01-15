@@ -17,7 +17,7 @@ class TypeUsersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create type_user" do
     assert_difference('TypeUser.count') do
-      post type_users_url, params: { type_user: { data: @type_user.data, type: @type_user.type } }
+      post type_users_url, params: { type_user: { data: @type_user.data, type_usr: @type_user.type_usr } }
     end
 
     assert_redirected_to type_user_url(TypeUser.last)
@@ -34,7 +34,7 @@ class TypeUsersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update type_user" do
-    patch type_user_url(@type_user), params: { type_user: { data: @type_user.data, type: @type_user.type } }
+    patch type_user_url(@type_user), params: { type_user: { data: @type_user.data, type_usr: @type_user.type_usr } }
     assert_redirected_to type_user_url(@type_user)
   end
 

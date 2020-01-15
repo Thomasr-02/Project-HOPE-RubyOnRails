@@ -15,7 +15,7 @@ class TypeUsersTest < ApplicationSystemTestCase
     click_on "New Type User"
 
     fill_in "Data", with: @type_user.data
-    fill_in "Type", with: @type_user.type
+    fill_in "Type usr", with: @type_user.type_usr
     click_on "Create Type user"
 
     assert_text "Type user was successfully created"
@@ -27,7 +27,7 @@ class TypeUsersTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Data", with: @type_user.data
-    fill_in "Type", with: @type_user.type
+    fill_in "Type usr", with: @type_user.type_usr
     click_on "Update Type user"
 
     assert_text "Type user was successfully updated"
